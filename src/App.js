@@ -1,12 +1,11 @@
-import './App.css';
-import Navbar from "./components/navbar/Navbar";
+import "./App.css";
+// import Navbar from "./components/navbar/Navbar";
+import AppRouter from "./router/AppRouter";
 
 const App = () => {
   return (
-    <div className="App">
-        <Navbar />
-    </div>
+    <AppRouter />
   );
-}
+};
 
 export default App;
