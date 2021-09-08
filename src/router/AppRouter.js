@@ -6,8 +6,8 @@ import Home from "../pages/home/Home";
 function AppRouter() {
   return (
     <BrowserRouter>
-      <Switch>
         <Navbar />
+      <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/about" exact component={About} />
       </Switch>
