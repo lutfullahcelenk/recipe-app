@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Header from "../../components/header/Header";
 import axios from "axios";
 import {MainContainer} from "./HomeStyle";
-import RecipeCard from "../home/RecipeCard"
+import RecipeCardComp from "./RecipeCardComp";
 
 
 const mealTypes = ["Breakfast", "Lunch", "Dinner", "Snack", "Teatime"];
@@ -43,7 +43,7 @@ const Home = () => {
         {recipes ? (
       <MainContainer>
             {recipes?.map((recipe,index)=> (
-                <RecipeCard key={index} recipe={recipe?.recipe} />
+                <RecipeCardComp key={index} recipe={recipe?.recipe} />
             ))}
       </MainContainer>
         ): null
